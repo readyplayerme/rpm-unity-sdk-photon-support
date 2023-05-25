@@ -1,0 +1,33 @@
+{
+  "name": "com.readyplayerme.photonsupport",
+  "version": "0.1.0",
+  "displayName": "Ready Player Me Photon Support",
+  "description": "NetworkPlayer component that allows to use Ready Player Me avatars in Photon Unity Networking 2.",
+  "unity": "2020.3",
+  "unityRelease": "0f1",
+  "documentationUrl": "https://github.com/readyplayerme/rpm-unity-sdk-photon-support/blob/main/README.md",
+  "changelogUrl": "https://github.com/readyplayerme/rpm-unity-sdk-photon-support/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/readyplayerme/rpm-unity-sdk-photon-support/blob/main/LICENSE.md",
+  "dependencies": {
+    "com.unity.ugui": "1.0.0"
+  },
+  "keywords": [
+    "photon",
+    "engine",
+    "avatar",
+    "multiplayer",
+    "network"
+  ],
+  "author": {
+    "name": "Ready Player Me",
+    "email": "info@readyplayer.me",
+    "url": "https://readyplayer.me"
+  },
+  "samples": [
+    {
+      "displayName": "Avatar Control",
+      "description": "A basic sample with NetworkPlayer component that shows how to use avatar in multiplayer game.",
+      "path": "Samples~/Avatar Control"
+    }
+  ]
+}
