@@ -2,7 +2,7 @@
 using Photon.Pun;
 using UnityEngine;
 
-namespace ReadyPlayerMe
+namespace ReadyPlayerMe.PhotonSupport
 {
     public class BasicMovement : MonoBehaviour
     {

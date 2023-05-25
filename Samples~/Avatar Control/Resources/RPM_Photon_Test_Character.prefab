@@ -1155,7 +1155,7 @@ GameObject:
   - component: {fileID: 4190836954686298898}
   - component: {fileID: 8321960386871864625}
   m_Layer: 0
-  m_Name: Character
+  m_Name: RPM_Test_Character
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

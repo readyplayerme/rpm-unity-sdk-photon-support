@@ -3,8 +3,11 @@ using Photon.Pun;
 using UnityEngine;
 using ReadyPlayerMe.AvatarLoader;
 
-namespace ReadyPlayerMe
+namespace ReadyPlayerMe.PhotonSupport
 {
+    /// <summary>
+    ///     Used on Ready Player Me 
+    /// </summary>
     [RequireComponent(typeof(PhotonView))]
     public class NetworkPlayer : MonoBehaviour
     {
@@ -25,6 +28,10 @@ namespace ReadyPlayerMe
             photonView = GetComponent<PhotonView>();
         }
 
+        /// <summary>
+        ///     Calls PunRPC with the avatar URL as paramater to load the local and remote avatars.
+        /// </summary>
+        /// <param name="url">Avatar URL</param>
         public void LoadAvatar(string url)
         {
             photonView.RPC("SetPlayer", RpcTarget.AllBuffered, url);
@@ -45,6 +52,7 @@ namespace ReadyPlayerMe
             };
         }
 
+        //TODO: Multiple mesh transfer support.
         private void TransferMesh(GameObject source)
         {
             Animator sourceAnimator = source.GetComponentInChildren<Animator>();
