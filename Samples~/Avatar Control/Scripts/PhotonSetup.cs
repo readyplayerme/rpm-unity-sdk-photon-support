@@ -1,4 +1,4 @@
-#if PHOTON_UNITY_NETWORKING
+#if PHOTON_UNITY_NETWORKING && READY_PLAYER_ME
 using Photon.Pun;
 using UnityEngine;
 using UnityEngine.UI;

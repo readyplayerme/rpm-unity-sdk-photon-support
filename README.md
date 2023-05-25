@@ -1,2 +1,3 @@
-# Ready Player Me Unity SDK - Photon Multiplayer Support
+# Ready Player Me Unity SDK - Photon Support
 
+Photon Unity Networking 2 support for Ready Player Me avatars.
