@@ -1155,7 +1155,7 @@ GameObject:
   - component: {fileID: 4190836954686298898}
   - component: {fileID: 8321960386871864625}
   m_Layer: 0
-  m_Name: RPM_Test_Character
+  m_Name: RPM_Photon_Test_Character
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1222,10 +1222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f796fce0b1072d14596d8f4642d7040f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftEye: {fileID: 2874902635560224358}
-  rightEye: {fileID: 8753200735833698574}
   config: {fileID: 11400000, guid: 7d72701409fb5ac4b8cf68899571e8cf, type: 2}
-  skinnedMeshRenderer: {fileID: 2626021576264805146}
 --- !u!114 &2094672924555706623
 MonoBehaviour:
   m_ObjectHideFlags: 0

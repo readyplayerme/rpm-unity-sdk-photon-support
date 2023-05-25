@@ -11,13 +11,15 @@ namespace ReadyPlayerMe.PhotonSupport
     [RequireComponent(typeof(PhotonView))]
     public class NetworkPlayer : MonoBehaviour
     {
-        [SerializeField] private Transform leftEye;
-        [SerializeField] private Transform rightEye;
         [SerializeField] private AvatarConfig config;
-        [SerializeField] private SkinnedMeshRenderer skinnedMeshRenderer;
         
         private Animator animator;
         private PhotonView photonView;
+        
+        private Transform leftEye;
+        private Transform rightEye;
+        
+        private SkinnedMeshRenderer skinnedMeshRenderer;
     
         private const string FULL_BODY_LEFT_EYE_BONE_NAME = "Armature/Hips/Spine/Spine1/Spine2/Neck/Head/LeftEye";
         private const string FULL_BODY_RIGHT_EYE_BONE_NAME = "Armature/Hips/Spine/Spine1/Spine2/Neck/Head/RightEye";
@@ -26,6 +28,11 @@ namespace ReadyPlayerMe.PhotonSupport
         {
             animator = GetComponent<Animator>();
             photonView = GetComponent<PhotonView>();
+            
+            leftEye = transform.Find(FULL_BODY_LEFT_EYE_BONE_NAME);
+            rightEye = transform.Find(FULL_BODY_RIGHT_EYE_BONE_NAME);
+            
+            skinnedMeshRenderer = GetComponentInChildren<SkinnedMeshRenderer>();
         }
 
         /// <summary>
