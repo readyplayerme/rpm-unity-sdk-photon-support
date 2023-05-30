@@ -1154,7 +1154,7 @@ GameObject:
   - component: {fileID: 4190836954686298898}
   - component: {fileID: 8321960386871864625}
   m_Layer: 0
-  m_Name: RPM_Character
+  m_Name: RPM_Photon_Character
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1532,7 +1532,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 1
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 5857436389607498443, guid: a0942457c7b2f66439a4c131f529451d, type: 3}
+  m_Mesh: {fileID: 5857436389607498443, guid: d1f06edfd0329ac438cbcf529dfd8335, type: 3}
   m_Bones:
   - {fileID: 4087168597649311061}
   - {fileID: 209250575364920137}
