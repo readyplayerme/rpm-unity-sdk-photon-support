@@ -1188,7 +1188,7 @@ Animator:
   m_GameObject: {fileID: 4654519736456445864}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: ba5173a85368a4f4eb45fbc497be292c, type: 2}
-  m_Controller: {fileID: 9100000, guid: e75072b056e78e34bb298ec41afbd397, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1209,7 +1209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f796fce0b1072d14596d8f4642d7040f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  config: {fileID: 11400000, guid: 7d72701409fb5ac4b8cf68899571e8cf, type: 2}
+  config: {fileID: 0}
 --- !u!114 &2094672924555706623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1264,10 +1264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowLayerWeightsInspector: 1
   ShowParameterInspector: 1
-  m_SynchronizeParameters:
-  - Type: 4
-    SynchronizeType: 2
-    Name: Walking
+  m_SynchronizeParameters: []
   m_SynchronizeLayers:
   - SynchronizeType: 2
     LayerIndex: 0
@@ -1507,7 +1504,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a3a68e378f78d4c46bf58f101dc72db7, type: 2}
+  - {fileID: -2110216206232194035, guid: d1f06edfd0329ac438cbcf529dfd8335, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2304,7 +2301,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a3a68e378f78d4c46bf58f101dc72db7, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
