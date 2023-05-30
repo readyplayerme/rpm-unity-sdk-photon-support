@@ -16,8 +16,9 @@ MonoBehaviour:
   Pose: 1
   TextureAtlas: 1
   TextureSizeLimit: 1024
-  TextureChannel: 000000000100000002000000
+  TextureChannel: 0000000001000000020000000300000004000000
   UseHands: 0
   UseDracoCompression: 0
   UseMeshOptCompression: 0
-  MorphTargets: []
+  MorphTargets:
+  - none
