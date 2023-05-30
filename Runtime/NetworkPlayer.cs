@@ -19,7 +19,7 @@ namespace ReadyPlayerMe.PhotonSupport
         private Transform leftEye;
         private Transform rightEye;
         
-        private SkinnedMeshRenderer skinnedMeshRenderer;
+        private SkinnedMeshRenderer[] skinnedMeshRenderers;
     
         private const string FULL_BODY_LEFT_EYE_BONE_NAME = "Armature/Hips/Spine/Spine1/Spine2/Neck/Head/LeftEye";
         private const string FULL_BODY_RIGHT_EYE_BONE_NAME = "Armature/Hips/Spine/Spine1/Spine2/Neck/Head/RightEye";
@@ -32,7 +32,7 @@ namespace ReadyPlayerMe.PhotonSupport
             leftEye = transform.Find(FULL_BODY_LEFT_EYE_BONE_NAME);
             rightEye = transform.Find(FULL_BODY_RIGHT_EYE_BONE_NAME);
             
-            skinnedMeshRenderer = GetComponentInChildren<SkinnedMeshRenderer>();
+            skinnedMeshRenderers = GetComponentsInChildren<SkinnedMeshRenderer>();
         }
 
         /// <summary>
@@ -63,14 +63,17 @@ namespace ReadyPlayerMe.PhotonSupport
         private void TransferMesh(GameObject source)
         {
             Animator sourceAnimator = source.GetComponentInChildren<Animator>();
-            SkinnedMeshRenderer sourceMesh = source.GetComponentInChildren<SkinnedMeshRenderer>();
+            SkinnedMeshRenderer[] sourceMeshes = source.GetComponentsInChildren<SkinnedMeshRenderer>();
 
-            Mesh mesh = sourceMesh.sharedMesh;
-            skinnedMeshRenderer.sharedMesh = mesh;
+            for (int i = 0; i < sourceMeshes.Length; i++)
+            {
+                Mesh mesh = sourceMeshes[i].sharedMesh;
+                skinnedMeshRenderers[i].sharedMesh = mesh;
 
-            Material[] materials = sourceMesh.sharedMaterials;
-            skinnedMeshRenderer.sharedMaterials = materials;
-            
+                Material[] materials = sourceMeshes[i].sharedMaterials;
+                skinnedMeshRenderers[i].sharedMaterials = materials;
+            }
+
             Avatar avatar = sourceAnimator.avatar;
             animator.avatar = avatar;
 
