@@ -26,8 +26,8 @@ namespace ReadyPlayerMe.PhotonSupport.Editor
 
                 string path = AssetDatabase.GUIDToAssetPath(guids[0]);
                 AssetDatabase.CopyAsset(path, "Assets/Ready Player Me/RPM_Character.prefab");
-                Selection.activeObject = AssetDatabase.LoadAssetAtPath("Assets/Ready Player Me/RPM_Character.prefab", typeof(GameObject));
-                Debug.Log("Photon prefab transferred to Assets/Ready Player Me/RPM_Character.prefab");
+                Selection.activeObject = AssetDatabase.LoadAssetAtPath("Assets/Ready Player Me/Resources/RPM_Character.prefab", typeof(GameObject));
+                Debug.Log("Photon prefab transferred to Assets/Ready Player Me/Resources/RPM_Character.prefab");
             }
         }
     }
