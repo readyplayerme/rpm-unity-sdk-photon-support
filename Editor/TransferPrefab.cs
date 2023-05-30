@@ -16,7 +16,7 @@ namespace ReadyPlayerMe.PhotonSupport.Editor
             }
             else
             {
-                if (AssetDatabase.LoadAssetAtPath("Assets/Ready Player Me/RPM_Character.prefab", typeof(GameObject)))
+                if (AssetDatabase.LoadAssetAtPath("Assets/Ready Player Me/Resources/RPM_Character.prefab", typeof(GameObject)))
                 {
                     if (!EditorUtility.DisplayDialog("Warning", "RPM_Character prefab already exists. Do you want to overwrite it?", "Yes", "No"))
                     {
