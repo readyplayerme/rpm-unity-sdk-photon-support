@@ -5,7 +5,7 @@ namespace ReadyPlayerMe.PhotonSupport.Editor
 {
     public static class TransferPrefab
     {
-        [MenuItem("Ready Player Me/Transfer Photon Prefab")]
+        [MenuItem("Ready Player Me/Transfer Photon Prefab", false, priority = 35)]
         public static void Transfer()
         {
             string[] guids = AssetDatabase.FindAssets("t:prefab RPM_Photon_Character");
