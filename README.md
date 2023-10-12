@@ -7,9 +7,9 @@ Photon requires characters to be ready prefabs to be instantiated when a player 
 This package provides a `RPM_Character` prefab to be instantiated, a `NetworkPlayer` component to handle the avatar loading and `Avatar Control` sample scene to test the avatar in a multiplayer environment.
 
 ## Requirements
-- Photon Unity Networking 2 (PUN2)
+- [Photon Unity Networking 2](https://assetstore.unity.com/packages/tools/network/pun-2-free-119922) (PUN2)
 - Photon Settings configured with App ID and Region
-- Ready Player Me Unity SDK
+- [Ready Player Me Core](https://github.com/readyplayerme/rpm-unity-sdk-core)
 
 ## Installation
 - Copy git URL by clicking on green CODE button and then by clicking on copy button as shown. 
