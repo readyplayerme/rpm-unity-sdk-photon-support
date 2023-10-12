@@ -27,7 +27,7 @@
     {
       "displayName": "Avatar Control",
       "description": "A basic sample with NetworkPlayer component that shows how to use avatar in multiplayer game.",
-      "path": "Samples~/Avatar Control"
+      "path": "Samples~/AvatarControl"
     }
   ]
 }
