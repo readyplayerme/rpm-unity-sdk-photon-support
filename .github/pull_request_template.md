@@ -1,4 +1,4 @@
-﻿<!-- Copy the TICKETID for this task from Monday and add it to the PR name in brackets -->
+<!-- Copy the TICKETID for this task from Jira and add it to the PR name in brackets -->
 <!-- PR name should look like: [TICKETID] My Pull Request -->
 
 <!-- Add link for the ticket here editing the TICKETID-->
@@ -9,7 +9,7 @@
 
 -   Briefly describe what this change will do
 
-<!-- Fill the section below with Added, Updated and Removed. -->
+<!-- Fill the section below with Added, Updated and Removed information. -->
 <!-- If there is no item under one of the lists remove it's title. -->
 
 <!-- Testability -->
@@ -22,4 +22,11 @@
 
 ## Checklist
 
+-   [ ] Tests written or updated for the changes.
 -   [ ] Documentation is updated.
+-   [ ] Changelog is updated.
+
+<!--- Remember to copy the Changes Section into the commit message when you close the PR -->
+
+
+
