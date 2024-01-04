@@ -27,7 +27,7 @@ namespace ReadyPlayerMe.PhotonSupport.Editor
                         return;
                     }
                 }
-                PrefabTransferHelper.TransferPrefabByGuid(guids[0], NEW_PREFAB_PATH);
+                PrefabHelper.TransferPrefabByGuid(guids[0], NEW_PREFAB_PATH);
                 Debug.Log($"Photon prefab transferred to {NEW_PREFAB_PATH}");
             }
         }
