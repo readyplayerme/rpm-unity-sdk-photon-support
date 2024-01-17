@@ -1,3 +1,4 @@
+using ReadyPlayerMe.Core.Editor;
 using UnityEditor;
 using UnityEngine;
 
@@ -5,10 +6,13 @@ namespace ReadyPlayerMe.PhotonSupport.Editor
 {
     public static class TransferPrefab
     {
-        [MenuItem("Ready Player Me/Transfer Photon Prefab")]
+        private const string NEW_PREFAB_PATH = "Assets/Ready Player Me/Resources/RPM_Photon_Character.prefab";
+        private const string PREFAB_ASSET_NAME = "t:prefab RPM_Photon_Character";
+
+        [MenuItem("Tools/Ready Player Me/Transfer Photon Prefab", false, priority = 34)]
         public static void Transfer()
         {
-            string[] guids = AssetDatabase.FindAssets("t:prefab RPM_Photon_Character");
+            var guids = AssetDatabase.FindAssets(PREFAB_ASSET_NAME);
 
             if (guids.Length == 0)
             {
@@ -16,18 +20,15 @@ namespace ReadyPlayerMe.PhotonSupport.Editor
             }
             else
             {
-                if (AssetDatabase.LoadAssetAtPath("Assets/Ready Player Me/Resources/RPM_Character.prefab", typeof(GameObject)))
+                if (AssetDatabase.LoadAssetAtPath(NEW_PREFAB_PATH, typeof(GameObject)))
                 {
-                    if (!EditorUtility.DisplayDialog("Warning", "RPM_Character prefab already exists. Do you want to overwrite it?", "Yes", "No"))
+                    if (!EditorUtility.DisplayDialog("Warning", "RPM_Photon_Character prefab already exists. Do you want to overwrite it?", "Yes", "No"))
                     {
                         return;
                     }
                 }
-
-                string path = AssetDatabase.GUIDToAssetPath(guids[0]);
-                AssetDatabase.CopyAsset(path, "Assets/Ready Player Me/Resources/RPM_Character.prefab");
-                Selection.activeObject = AssetDatabase.LoadAssetAtPath("Assets/Ready Player Me/Resources/RPM_Character.prefab", typeof(GameObject));
-                Debug.Log("Photon prefab transferred to Assets/Ready Player Me/Resources/RPM_Character.prefab");
+                PrefabHelper.TransferPrefabByGuid(guids[0], NEW_PREFAB_PATH);
+                Debug.Log($"Photon prefab transferred to {NEW_PREFAB_PATH}");
             }
         }
     }

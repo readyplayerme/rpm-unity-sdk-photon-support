@@ -63,3 +63,7 @@ crashlytics-build.properties
 /[Pp]hoton.meta
 /[Rr]eady [Pp]layer [Mm]e/
 /[Rr]eady [Pp]layer [Mm]e.meta
+
+# Samples meta files 
+**/Samples~.meta
+**/Samples.meta

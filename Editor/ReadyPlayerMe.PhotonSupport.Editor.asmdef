@@ -1,7 +1,9 @@
 {
     "name": "ReadyPlayerMe.PhotonSupport.Editor",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "ReadyPlayerMe.Core.Editor"
+    ],
     "includePlatforms": [
         "Editor"
     ],

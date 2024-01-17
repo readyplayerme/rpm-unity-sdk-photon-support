@@ -1,6 +1,6 @@
 {
   "name": "com.readyplayerme.photonsupport",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "displayName": "Ready Player Me Photon Support",
   "description": "NetworkPlayer component that allows to use Ready Player Me avatars in Photon Unity Networking 2.",
   "unity": "2020.3",
@@ -27,7 +27,7 @@
     {
       "displayName": "Avatar Control",
       "description": "A basic sample with NetworkPlayer component that shows how to use avatar in multiplayer game.",
-      "path": "Samples~/Avatar Control"
+      "path": "Samples~/AvatarControl"
     }
   ]
 }
