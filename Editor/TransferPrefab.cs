@@ -9,7 +9,7 @@ namespace ReadyPlayerMe.PhotonSupport.Editor
         private const string NEW_PREFAB_PATH = "Assets/Ready Player Me/Resources/RPM_Photon_Character.prefab";
         private const string PREFAB_ASSET_NAME = "t:prefab RPM_Photon_Character";
 
-        [MenuItem("Ready Player Me/Transfer Photon Prefab", false, priority = 34)]
+        [MenuItem("Tools/Ready Player Me/Transfer Photon Prefab", false, priority = 34)]
         public static void Transfer()
         {
             var guids = AssetDatabase.FindAssets(PREFAB_ASSET_NAME);
