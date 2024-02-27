@@ -19,7 +19,6 @@ namespace ReadyPlayerMe.PhotonSupport
 
         private Transform leftEye;
         private Transform rightEye;
-        private SkinnedMeshRenderer[] skinnedMeshRenderers;
 
         private void Awake()
         {
@@ -28,7 +27,6 @@ namespace ReadyPlayerMe.PhotonSupport
 
             leftEye = AvatarBoneHelper.GetLeftEyeBone(transform, true);
             rightEye = AvatarBoneHelper.GetRightEyeBone(transform, true);
-            skinnedMeshRenderers = gameObject.GetComponentsInChildren<SkinnedMeshRenderer>();
         }
 
         /// <summary>
@@ -51,11 +49,10 @@ namespace ReadyPlayerMe.PhotonSupport
                 leftEye.transform.localPosition = AvatarBoneHelper.GetLeftEyeBone(args.Avatar.transform, true).localPosition;
                 rightEye.transform.localPosition = AvatarBoneHelper.GetRightEyeBone(args.Avatar.transform, true).localPosition;
 
-                AvatarMeshHelper.TransferMesh(args.Avatar, skinnedMeshRenderers, animator);
+                AvatarMeshHelper.TransferMesh(args.Avatar, gameObject);
                 Destroy(args.Avatar);
             };
         }
-
     }
 }
 #endif
