@@ -53,7 +53,6 @@ namespace ReadyPlayerMe.PhotonSupport
                 Destroy(args.Avatar);
             };
         }
-
     }
 }
 #endif
