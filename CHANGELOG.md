@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [0.3.1] - 2024.MM.DD
+## [0.3.1] - 2024.03.01
 
 ### Updated
 - Added all possible mesh options to Photon Test Character for multi-mesh avatar support. [#241](https://github.com/readyplayerme/rpm-unity-sdk-photon-support/pull/7)
