@@ -14,7 +14,6 @@ namespace ReadyPlayerMe.PhotonSupport
         private const string SET_PLAYER_METHOD = "SetPlayer";
         [SerializeField] private AvatarConfig config;
 
-        private Animator animator;
         private PhotonView photonView;
 
         private Transform leftEye;
@@ -22,7 +21,6 @@ namespace ReadyPlayerMe.PhotonSupport
 
         private void Awake()
         {
-            animator = GetComponent<Animator>();
             photonView = GetComponent<PhotonView>();
 
             leftEye = AvatarBoneHelper.GetLeftEyeBone(transform, true);
