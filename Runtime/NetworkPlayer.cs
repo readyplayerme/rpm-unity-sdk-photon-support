@@ -14,21 +14,17 @@ namespace ReadyPlayerMe.PhotonSupport
         private const string SET_PLAYER_METHOD = "SetPlayer";
         [SerializeField] private AvatarConfig config;
 
-        private Animator animator;
         private PhotonView photonView;
 
         private Transform leftEye;
         private Transform rightEye;
-        private SkinnedMeshRenderer[] skinnedMeshRenderers;
 
         private void Awake()
         {
-            animator = GetComponent<Animator>();
             photonView = GetComponent<PhotonView>();
 
             leftEye = AvatarBoneHelper.GetLeftEyeBone(transform, true);
             rightEye = AvatarBoneHelper.GetRightEyeBone(transform, true);
-            skinnedMeshRenderers = gameObject.GetComponentsInChildren<SkinnedMeshRenderer>();
         }
 
         /// <summary>
@@ -51,11 +47,10 @@ namespace ReadyPlayerMe.PhotonSupport
                 leftEye.transform.localPosition = AvatarBoneHelper.GetLeftEyeBone(args.Avatar.transform, true).localPosition;
                 rightEye.transform.localPosition = AvatarBoneHelper.GetRightEyeBone(args.Avatar.transform, true).localPosition;
 
-                AvatarMeshHelper.TransferMesh(args.Avatar, skinnedMeshRenderers, animator);
+                AvatarMeshHelper.TransferMesh(args.Avatar, gameObject);
                 Destroy(args.Avatar);
             };
         }
-
     }
 }
 #endif
