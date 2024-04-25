@@ -1,6 +1,6 @@
 {
   "name": "com.readyplayerme.photonsupport",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "displayName": "Ready Player Me Photon Support",
   "description": "NetworkPlayer component that allows to use Ready Player Me avatars in Photon Unity Networking 2.",
   "unity": "2020.3",
