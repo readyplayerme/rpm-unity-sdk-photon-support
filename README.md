@@ -14,7 +14,7 @@ This package provides an `RPM_Photon_Character` prefab to be instantiated, a `Ne
 ## Installation
 - Copy the git URL below.
   ```
-  https://github.com/readyplayerme/rpm-unity-sdk-photon-support
+  https://github.com/readyplayerme/rpm-unity-sdk-photon-support.git
   ```
 
 - Open the `Window > Package Manager` menu, click on the Plus (+) button and select `Add package from git URL`.
